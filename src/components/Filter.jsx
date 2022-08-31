@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 const Filter = ({ setPokemons, filter, setFilter, setPokemonSearch}) => {
 
     const [pokemonsFiltred, setPokemonsFiltred] = useState()
-    const [findPokemons, setfindPokemons] = useState()
     
     useEffect(() =>{
         let find = []
@@ -16,7 +15,6 @@ const Filter = ({ setPokemons, filter, setFilter, setPokemonSearch}) => {
             setPokemons(find)
             setPokemonSearch('')
         }
-        console.log(find)
 
     },[pokemonsFiltred])
 

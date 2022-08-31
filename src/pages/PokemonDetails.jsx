@@ -15,8 +15,6 @@ const PokemonDetails = () => {
   }, [])
 
 
-  console.log(poke)
-
   return (
     <div className='cards__main_container'>
 
@@ -49,8 +47,8 @@ const PokemonDetails = () => {
           <div className="type_container">
             <label htmlFor="">Abilities</label>
             <div className="types__slides">
-              <label htmlFor="">{poke.abilities[0].ability.name}</label>
-              <label htmlFor="">{poke.abilities[1].ability.name}</label>
+              <label htmlFor="">{poke?.abilities[0].ability.name}</label>
+              <label htmlFor="">{poke?.abilities[1].ability.name}</label>
             </div>
           </div>
         </div>
